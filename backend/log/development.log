@@ -87,3 +87,955 @@ Processing by BooksController#index as */*
 Completed 200 OK in 86ms (Views: 79.1ms | ActiveRecord: 2.6ms | Allocations: 15802)
 
 
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCharacter Load (1.0ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.7ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.5ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 4]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 6]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 8]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Destroy (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (0.6ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (0.5ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (0.4ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (0.6ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Way of Kings, The"], ["created_at", "2020-06-10 14:29:42.152052"], ["updated_at", "2020-06-10 14:29:42.152052"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Steelheart"], ["created_at", "2020-06-10 14:29:42.156346"], ["updated_at", "2020-06-10 14:29:42.156346"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (0.3ms)[0m  [1m[32mINSERT INTO "books" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Storm Front"], ["created_at", "2020-06-10 14:29:42.159998"], ["updated_at", "2020-06-10 14:29:42.159998"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Shalan"], ["book_id", 4], ["created_at", "2020-06-10 14:29:42.201099"], ["updated_at", "2020-06-10 14:29:42.201099"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.3ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "David"], ["book_id", 5], ["created_at", "2020-06-10 14:29:42.206537"], ["updated_at", "2020-06-10 14:29:42.206537"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.3ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Harry"], ["book_id", 6], ["created_at", "2020-06-10 14:29:42.211432"], ["updated_at", "2020-06-10 14:29:42.211432"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.3ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kaladin"], ["book_id", 4], ["created_at", "2020-06-10 14:29:42.220163"], ["updated_at", "2020-06-10 14:29:42.220163"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.3ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Megan"], ["book_id", 5], ["created_at", "2020-06-10 14:29:42.224256"], ["updated_at", "2020-06-10 14:29:42.224256"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.3ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Murphy"], ["book_id", 6], ["created_at", "2020-06-10 14:29:42.228405"], ["updated_at", "2020-06-10 14:29:42.228405"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.3ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Dalanar"], ["book_id", 4], ["created_at", "2020-06-10 14:29:42.236209"], ["updated_at", "2020-06-10 14:29:42.236209"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Prof"], ["book_id", 5], ["created_at", "2020-06-10 14:29:42.242828"], ["updated_at", "2020-06-10 14:29:42.242828"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Susan"], ["book_id", 6], ["created_at", "2020-06-10 14:29:42.247931"], ["updated_at", "2020-06-10 14:29:42.247931"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" ORDER BY "books"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ? LIMIT ?[0m  [["book_id", 4], ["LIMIT", 11]]
+Started GET "/books" for ::1 at 2020-06-10 08:51:24 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 50ms (Views: 42.0ms | ActiveRecord: 2.6ms | Allocations: 15802)
+
+
+Started GET "/books" for ::1 at 2020-06-10 08:57:51 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BooksController#index as */*
+  [1m[36mBook Load (3.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 4.2ms | Allocations: 5266)
+
+
+Started GET "/books" for ::1 at 2020-06-10 08:59:07 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.7ms | Allocations: 5241)
+
+
+Started GET "/books" for ::1 at 2020-06-10 08:59:45 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.7ms | Allocations: 5241)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:03:05 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.7ms | Allocations: 5243)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:03:33 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.7ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:04:44 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.5ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:04:54 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.6ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:05:15 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.5ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:22:03 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (7.8ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 39ms (Views: 28.8ms | ActiveRecord: 9.0ms | Allocations: 5254)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:23:36 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.7ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:25:57 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.7ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:34:45 -0600
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 1.0ms | Allocations: 5254)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:36:59 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 1.1ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:38:13 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (51.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 64ms (Views: 11.2ms | ActiveRecord: 52.4ms | Allocations: 5226)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:40:03 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.6ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:41:55 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.9ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:46:06 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.7ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:46:32 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.6ms | Allocations: 5223)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 09:51:31 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 2160)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 09:52:09 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 2026)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 09:52:35 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 2026)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 09:53:18 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 2026)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 09:53:48 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 2026)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:55:09 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.7ms | Allocations: 5223)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 09:55:18 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/characters"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/books" for ::1 at 2020-06-10 09:56:56 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 1.5ms | Allocations: 12976)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 09:57:01 -0600
+  
+ActionController::RoutingError (No route matches [POST] "/characters"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/characters" for ::1 at 2020-06-10 09:57:27 -0600
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/characters"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/books" for ::1 at 2020-06-10 09:59:05 -0600
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 40ms (Views: 34.9ms | ActiveRecord: 1.6ms | Allocations: 15803)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 09:59:14 -0600
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Adolin", "book_id"=>"Way of Kings, The"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 6360)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 09:59:24 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 2152)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 09:59:28 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.5ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.7ms | Allocations: 2026)
+
+
+Started GET "/books" for ::1 at 2020-06-10 09:59:53 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.5ms | Allocations: 5241)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 09:59:54 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.3ms | Allocations: 2042)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 10:00:04 -0600
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Adolin", "book_id"=>"Way of Kings, The"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 3057)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 10:02:12 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 2026)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 10:02:17 -0600
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Adolin", "book_id"=>"Way of Kings, The"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 3073)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 10:02:20 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 2026)
+
+
+Started GET "/books" for ::1 at 2020-06-10 10:02:28 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.7ms | Allocations: 5226)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 10:02:29 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 2026)
+
+
+Started GET "/books" for ::1 at 2020-06-10 10:02:58 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.6ms | Allocations: 5223)
+
+
+Started GET "/books" for ::1 at 2020-06-10 10:09:14 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.6ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 37ms (Views: 30.0ms | ActiveRecord: 2.1ms | Allocations: 5255)
+
+
+Started GET "/books" for ::1 at 2020-06-10 10:11:59 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.6ms | Allocations: 5223)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 10:12:15 -0600
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Adolin", "book_id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mCharacter Create (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Adolin"], ["book_id", 4], ["created_at", "2020-06-10 16:12:15.721098"], ["updated_at", "2020-06-10 16:12:15.721098"]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 3596)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 10:12:18 -0600
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Adolin", "book_id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Adolin"], ["book_id", 4], ["created_at", "2020-06-10 16:12:18.416038"], ["updated_at", "2020-06-10 16:12:18.416038"]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 3488)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 10:12:57 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.8ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 3.0ms | ActiveRecord: 0.9ms | Allocations: 2294)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 10:15:33 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 2294)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 10:17:29 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Yasna", "book_id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mCharacter Create (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Yasna"], ["book_id", 4], ["created_at", "2020-06-10 16:17:29.773068"], ["updated_at", "2020-06-10 16:17:29.773068"]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Redirected to http://localhost:3000
+Completed 302 Found in 73ms (ActiveRecord: 2.7ms | Allocations: 11215)
+
+
+Started GET "/" for ::1 at 2020-06-10 10:17:29 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zietieflr/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zietieflr/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 19.2ms | Allocations: 6184)
+Completed 200 OK in 33ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 7482)
+
+
+Started GET "/books/5" for ::1 at 2020-06-10 10:18:57 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 29ms (Views: 13.1ms | ActiveRecord: 1.2ms | Allocations: 9737)
+
+
+Started GET "/books/4" for ::1 at 2020-06-10 10:19:00 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 2427)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 10:19:43 -0600
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Szeth", "book_id"=>"4"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mCharacter Create (5.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Szeth"], ["book_id", 4], ["created_at", "2020-06-10 16:19:43.728882"], ["updated_at", "2020-06-10 16:19:43.728882"]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 16.7ms | Allocations: 3760)
+
+
+  
+Errno::ENOENT (No such file or directory - http://localhost:3001/index.html):
+  
+app/controllers/characters_controller.rb:17:in ``'
+app/controllers/characters_controller.rb:17:in `create'
+Started GET "/books/4" for ::1 at 2020-06-10 10:20:24 -0600
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 28ms (Views: 11.7ms | ActiveRecord: 4.0ms | Allocations: 10413)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 10:20:35 -0600
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Cody", "book_id"=>"5"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Cody"], ["book_id", 5], ["created_at", "2020-06-10 16:20:35.235793"], ["updated_at", "2020-06-10 16:20:35.235793"]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.5ms | Allocations: 3778)
+
+
+  
+Errno::ENOENT (No such file or directory - http://localhost:3001):
+  
+app/controllers/characters_controller.rb:17:in ``'
+app/controllers/characters_controller.rb:17:in `create'
+Started POST "/characters" for ::1 at 2020-06-10 10:21:29 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Tina", "book_id"=>"5"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mCharacter Create (1.1ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tina"], ["book_id", 5], ["created_at", "2020-06-10 16:21:29.405308"], ["updated_at", "2020-06-10 16:21:29.405308"]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Redirected to http://localhost:3001
+Completed 302 Found in 34ms (ActiveRecord: 7.8ms | Allocations: 11136)
+
+
+Started GET "/books" for ::1 at 2020-06-10 10:21:29 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.6ms | Allocations: 6310)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 10:22:41 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Mister", "book_id"=>"6"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mCharacter Create (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mister"], ["book_id", 6], ["created_at", "2020-06-10 16:22:41.750240"], ["updated_at", "2020-06-10 16:22:41.750240"]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Redirected to http://localhost:3001/book.html?id=6
+Completed 302 Found in 27ms (ActiveRecord: 3.1ms | Allocations: 11131)
+
+
+Started GET "/books/6" for ::1 at 2020-06-10 10:22:41 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.4ms | Allocations: 2536)
+
+
+Started GET "/books/6" for ::1 at 2020-06-10 10:24:10 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 2161)
+
+
+Started GET "/books/6" for ::1 at 2020-06-10 10:24:51 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 2162)
+
+
+Started GET "/books/6" for ::1 at 2020-06-10 10:25:19 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.9ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 1.0ms | Allocations: 2161)
+
+
+Started GET "/books/6" for ::1 at 2020-06-10 10:25:25 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 2161)
+
+
+Started POST "/characters" for ::1 at 2020-06-10 10:25:45 -0600
+Processing by CharactersController#create as HTML
+  Parameters: {"name"=>"Butters", "book_id"=>"6"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[36mCharacter Create (0.5ms)[0m  [1m[32mINSERT INTO "characters" ("name", "book_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Butters"], ["book_id", 6], ["created_at", "2020-06-10 16:25:45.040546"], ["updated_at", "2020-06-10 16:25:45.040546"]]
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/characters_controller.rb:13:in `create'
+Redirected to http://localhost:3001/book.html?id=6
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms | Allocations: 3496)
+
+
+Started GET "/books/6" for ::1 at 2020-06-10 10:25:45 -0600
+Processing by BooksController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:8:in `show'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:9:in `show'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 2294)
+
+
+Started GET "/books" for ::1 at 2020-06-10 10:26:09 -0600
+Processing by BooksController#index as */*
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 4]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 5]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."book_id" = ?[0m  [["book_id", 6]]
+  ↳ app/controllers/books_controller.rb:4:in `index'
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.6ms | Allocations: 6307)
+
+

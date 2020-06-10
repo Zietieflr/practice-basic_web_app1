@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books!</title>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Books! You can find out more about their characters!</h1>
+  </header>
+  <main>
+    <p id="for-form">
+      <h3>Add a character:</h3>
+      <form method="POST" action="http://localhost:3000/characters">
+        <label for="name">Name:</label>
+        <input id="name" name="name" />
+        <label for="book">From:</label>
+        <select id="book" name="book_id" />
+        <input type="submit" value="Add Character" />
+      </form>
+    </p>
+    <ul id="book-ul">
+
+    </ul>
+  </main>
+</body>
+</html>
